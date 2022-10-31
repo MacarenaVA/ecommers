@@ -16,45 +16,48 @@ body{
 
 nav{
     grid-area: nav;
+    
 }
 
 .navbar{
-    background-color: var(--secondary-pink);
-    border-top: solid 1px;
-    border-color: var(--primary-yellow);
+    background-color: var(--neutral-green);
     justify-content: center;
     align-content: center;
     align-items: center;
+    border-bottom: solid 1px;
+    border-color: white
 }
 
 .container-fluid {
     flex-direction: column;
 }
 .navbar-brand{
-    font-size:x-large;
+    font-size:xx-large;
     align-self: center;
+    color: var(--secondary-gree);
 }
 
 menu{
     grid-area: menu;
-    background-color: var(--neutral-green);
+    background-color: var(--pink-neutral);
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     border-right: solid 1px;
-    border-color: var(--primary-yellow);
+    border-color: white
 }
 
 main{
     grid-area: main;
     background-color: var(--pink-neutral);
+    
 }
 
 footer{
     grid-area: footer;
-    background-color: var(--secondary-pink);
+    background-color: var(--neutral-green);
     border-top: solid 1px;
-    border-color: var(--primary-yellow);
+    border-color: white
 }
 
 .grid-container{
@@ -163,3 +166,10 @@ footer{
     justify-self: center;
     color: var(--secondary-gree);
 }
+ footer{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    color: var(--secondary-gree);
+    
+ }
