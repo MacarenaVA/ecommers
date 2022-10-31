@@ -22,6 +22,17 @@ nav{
     background-color: var(--secondary-pink);
     border-top: solid 1px;
     border-color: var(--primary-yellow);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.container-fluid {
+    flex-direction: column;
+}
+.navbar-brand{
+    font-size:x-large;
+    align-self: center;
 }
 
 menu{
@@ -48,6 +59,7 @@ footer{
 
 .grid-container{
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 5fr;
     grid-template-areas:
     "nav nav"
@@ -58,14 +70,43 @@ footer{
 .menu-container{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.productos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
+.menu-text{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.categoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.titulo{
+    color: var(--accent-blue);
+}
+
+.tipo{
+    color: var(--accent-blue);
+    font-style: italic;
+}
+
+.cantidad{
+    color: var(--secondary-gree);
+    font-style: oblique;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .card-producto{
     display: flex;
     flex-direction: column;
@@ -73,6 +114,8 @@ footer{
     justify-content: center;
     background-color: var(--neutral-green);
     margin: 1rem;
+    width: 30%;
+    height: calc(100vw - 0.3);
     
 }
 
