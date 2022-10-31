@@ -1,0 +1,122 @@
+:root{
+    --neutral-green:#dbe6e0;
+    --pink-neutral:#fee9e1;
+    --primary-yellow: #f6efa6;
+    --secondary-pink: #f0d2d1;
+    --secondary-gree: #8eb19d;
+    --accent-blue: #66b3ba;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yellowtail', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.navbar{
+    background-color: var(--secondary-pink);
+    border-top: solid 1px;
+    border-color: var(--primary-yellow);
+}
+
+menu{
+    grid-area: menu;
+    background-color: var(--neutral-green);
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    border-right: solid 1px;
+    border-color: var(--primary-yellow);
+}
+
+main{
+    grid-area: main;
+    background-color: var(--pink-neutral);
+}
+
+footer{
+    grid-area: footer;
+    background-color: var(--secondary-pink);
+    border-top: solid 1px;
+    border-color: var(--primary-yellow);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas:
+    "nav nav"
+    "menu main"
+    "footer footer";
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral-green);
+    margin: 1rem;
+    
+}
+
+.card-img{
+    width: 100%;
+    height: 80%;
+}
+
+.card-img img{
+    width: 100%;
+    height: max-content;
+    object-fit: contain;
+}
+
+.card-body{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.card-body button{
+    width: 100%;
+    margin-top: auto;
+    font-family:'Open Sans', sans-serif;
+    color: var(--accent-blue);
+    background-color: var(--secondary-pink);
+    border: 0ch;
+}
+
+.card-body h5{
+    font-family:'Open Sans', sans-serif;
+    margin: auto;
+    align-self: flex-end;
+    justify-self: center;
+    color: var(--accent-blue)
+}
+
+.card-body p{
+    font-family:'Open Sans', sans-serif;
+    margin: auto;
+    align-self: flex-end;
+    justify-self: center;
+    color: var(--secondary-gree);
+}
